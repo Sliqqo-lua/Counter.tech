@@ -19,7 +19,7 @@ wait(1.2)
 	Title = "Counter.tech"; -- 
 	Text = "Successfully Injected!"; -- 
 	button1 = "dismiss";
-        Duration = math.huge; -- 
+        Duration = "10"; -- 
 	})
 
 	BeforeLoad = tick()
