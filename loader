@@ -270,8 +270,7 @@ loadbutton.TextSize = 14.000
 loadbutton.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Sliqqo-lua/Counter.tech/main/main", true))()
 	wait(1.2)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Sliqqo-lua/Counter.tech/main/configuration", true))()
-	game.CoreGui.loader:Destroy()
+	main.visible = false
 end)
 
 exit.Name = "exit"
