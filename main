@@ -423,7 +423,7 @@ wait(1.2)
 					for i,v in pairs(Tabs:GetChildren()) do 
 						v.Visible = false 
 					end 
-					library:Tween(TextButton, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = COL3RGB(30, 115, 255)}) 
+					library:Tween(TextButton, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = COL3RGB(255, 189, 222)}) 
 					currenttab = text 
 					TabGui.Visible = true 
 				end 
