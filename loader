@@ -269,6 +269,7 @@ loadbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
 loadbutton.TextSize = 14.000
 loadbutton.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Sliqqo-lua/Counter.tech/main/main", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Sliqqo-lua/Counter.tech/main/configuration", true))()
 	game.CoreGui.loader:Destroy()
 end)
 
