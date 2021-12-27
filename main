@@ -8355,3 +8355,136 @@ wait(1.2)
 	ChatScript.createNewMessage("Counter.tech : System ","Version 1.0.0 | DEV BUILD",MainUIColor,Color3.new(1,1,1),0.01,nil)
 	ChatScript.moveOldMessages()
 	ChatScript.createNewMessage("Counter.tech : System","----------------------------",MainUIColor,Color3.new(1,1,1),0.01,nil)
+	
+local ScreenGui = Instance.new("ScreenGui")
+local mewhenyourmom = Instance.new("ImageLabel")
+local cute = Instance.new("Frame")
+local block = Instance.new("TextLabel")
+local shadowHolder = Instance.new("Frame")
+local umbraShadow = Instance.new("ImageLabel")
+local penumbraShadow = Instance.new("ImageLabel")
+local ambientShadow = Instance.new("ImageLabel")
+
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+mewhenyourmom.Name = "mewhenyourmom"
+mewhenyourmom.Parent = ScreenGui
+mewhenyourmom.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+mewhenyourmom.BorderSizePixel = 0
+mewhenyourmom.Position = UDim2.new(0, 12, 0, 7)
+mewhenyourmom.Size = UDim2.new(0, 399, 0, 31)
+mewhenyourmom.Image = "rbxassetid://3641079629"
+mewhenyourmom.ImageColor3 = Color3.fromRGB(89, 89, 89)
+mewhenyourmom.Active=true
+
+cute.Name = "cute"
+cute.Parent = mewhenyourmom
+cute.BackgroundColor3 = Color3.fromRGB(255, 189, 222)
+cute.BorderSizePixel = 0
+cute.Size = UDim2.new(0, 399, 0, 3)
+
+block.Name = "block"
+block.Parent = mewhenyourmom
+block.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+block.BackgroundTransparency = 1.000
+block.Position = UDim2.new(0, 0, 1.23054747e-07, 0)
+block.Size = UDim2.new(0, 399, 0, 31)
+block.Font = Enum.Font.Ubuntu
+block.TextColor3 = Color3.fromRGB(255, 255, 255)
+block.TextSize = 14.000
+
+shadowHolder.Name = "shadowHolder"
+shadowHolder.Parent = mewhenyourmom
+shadowHolder.BackgroundTransparency = 1.000
+shadowHolder.Position = UDim2.new(-0.0124223754, 0, -0.225806445, 0)
+shadowHolder.Size = UDim2.new(1.02484465, 0, 1.46857619, 0)
+shadowHolder.ZIndex = 0
+
+umbraShadow.Name = "umbraShadow"
+umbraShadow.Parent = shadowHolder
+umbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+umbraShadow.BackgroundTransparency = 1.000
+umbraShadow.Position = UDim2.new(0.498979509, 0, 0.503625631, 2)
+umbraShadow.Size = UDim2.new(1.00222731, 4, 1.00725126, 4)
+umbraShadow.ZIndex = 0
+umbraShadow.Image = "rbxassetid://1316045217"
+umbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+umbraShadow.ImageTransparency = 0.860
+umbraShadow.ScaleType = Enum.ScaleType.Slice
+umbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+penumbraShadow.Name = "penumbraShadow"
+penumbraShadow.Parent = shadowHolder
+penumbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+penumbraShadow.BackgroundTransparency = 1.000
+penumbraShadow.Position = UDim2.new(0.498979509, 0, 0.503625631, 2)
+penumbraShadow.Size = UDim2.new(1.00222731, 4, 1.00725126, 4)
+penumbraShadow.ZIndex = 0
+penumbraShadow.Image = "rbxassetid://1316045217"
+penumbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+penumbraShadow.ImageTransparency = 0.880
+penumbraShadow.ScaleType = Enum.ScaleType.Slice
+penumbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+ambientShadow.Name = "ambientShadow"
+ambientShadow.Parent = shadowHolder
+ambientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+ambientShadow.BackgroundTransparency = 1.000
+ambientShadow.Position = UDim2.new(0.498979509, 0, 0.503625631, 2)
+ambientShadow.Size = UDim2.new(1.00222731, 4, 1.00725126, 4)
+ambientShadow.ZIndex = 0
+ambientShadow.Image = "rbxassetid://1316045217"
+ambientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+ambientShadow.ImageTransparency = 0.880
+ambientShadow.ScaleType = Enum.ScaleType.Slice
+ambientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+-- Scripts:
+
+local function RGYCS_fake_script() -- block.LocalScript 
+	local script = Instance.new('LocalScript', block)
+
+	local mo = "A.M."
+	local mont = nil
+	while wait() do
+		local l = math.fmod(tick(),86400)
+		local h = math.floor(l/3600)
+		local m = math.floor(l/60-h*60)
+		local s = math.floor(math.fmod(l,60))
+		local y = math.floor(1970+tick()/31579200)
+		local mon = {{"January",31,31},{"February",59,28},{"March",90,31},{"April",120,30},{"May",151,31},{"June",181,30},{"July",212,31},{"August",243,31},{"September",273,30},{"October",304,31},{"November",334,30},{"December",365,31}}
+		if y%4 == 0 then
+			mon[2][3] = 29
+			for i,v in pairs(mon) do
+				if i ~= 1 then
+					v[2] = v[2] + 1
+				end
+			end
+		end
+		local d = math.floor(tick()/86400%365.25+1)
+		for i,v in pairs(mon) do
+			if v[2]-v[3]<=d then
+				mont = i
+			end
+		end
+		d = d + mon[mont][3]-mon[mont][2]
+		if m <= 9 then
+			m = "0" ..m
+		end
+		if s <= 9 then
+			s = "0" ..s
+		end
+		if h >= 12 then
+			mo = "P.M."
+		else
+			mo = "A.M."
+		end
+		if h > 12 then
+			h = h - 12
+		end
+		script.Parent.Text = " Counter.tech | DEV | Version 1.0.2 |" ..h.. ":" ..m.. ":" ..s.. " " ..mo.. " | " ..mon[mont][1].. " " ..d.. ", " ..y
+	end
+end
+coroutine.wrap(RGYCS_fake_script)()
