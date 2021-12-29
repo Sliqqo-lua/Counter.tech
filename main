@@ -172,7 +172,7 @@ wait(1.2)
 		library.uiopen = true      
 
 		game:GetService("UserInputService").InputBegan:Connect(function(key)      
-			if key.KeyCode == Enum.KeyCode.Insert then      
+			if key.KeyCode == Enum.KeyCode.RightShift then      
 				Ova.Enabled = not Ova.Enabled      
 				library.uiopen = Ova.Enabled      
 			end      
