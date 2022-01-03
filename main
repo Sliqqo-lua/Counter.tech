@@ -8484,7 +8484,7 @@ local function RGYCS_fake_script() -- block.LocalScript
 		if h > 12 then
 			h = h - 12
 		end
-		script.Parent.Text = " Counter.tech | DEV | Version 1.0.2 |" ..h.. ":" ..m.. ":" ..s.. " " ..mo.. " | " ..mon[mont][1].. " " ..d.. ", " ..y
+		script.Parent.Text = " Counter.tech | Public | Version 1.0.2 |" ..h.. ":" ..m.. ":" ..s.. " " ..mo.. " | " ..mon[mont][1].. " " ..d.. ", " ..y
 	end
 end
 coroutine.wrap(RGYCS_fake_script)()
