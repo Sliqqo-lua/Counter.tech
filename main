@@ -8352,7 +8352,7 @@ wait(1.2)
 	ChatScript.moveOldMessages()
 	ChatScript.createNewMessage("Counter.tech : System ","Sucessfully loaded! Thanks for using Counter.tech",MainUIColor,Color3.new(1,1,1),0.01,nil)
 	ChatScript.moveOldMessages()
-	ChatScript.createNewMessage("Counter.tech : System ","Version 1.0.0 | DEV BUILD",MainUIColor,Color3.new(1,1,1),0.01,nil)
+	ChatScript.createNewMessage("Counter.tech : System ","Version 1.0.2 | Public",MainUIColor,Color3.new(1,1,1),0.01,nil)
 	ChatScript.moveOldMessages()
 	ChatScript.createNewMessage("Counter.tech : System","----------------------------",MainUIColor,Color3.new(1,1,1),0.01,nil)
 	
